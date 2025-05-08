@@ -1,0 +1,58 @@
+﻿<html>
+<head>
+<title> index </title>
+<link rel="stylesheet" type="text/css" href="geral.css">
+
+<script type="text/javascript">
+function time()
+{
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+document.getElementById('txt').innerHTML=h+" : "+m+" : "+s;
+setTimeout('time()',500);
+}
+</script>
+
+<script language=javascript type="text/javascript">
+dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sabado")
+monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
+now = new Date
+</script>
+
+</head>
+
+<body onload="time()">
+
+<h1> PORTFÓLIO SAÚDE OCUPACIONAL </h1>
+
+<table border="0" width="100%" bgcolor="gray">
+<tr>
+<th align="left" width="400px">
+<script>
+document.write("Hoje é " + dayName[now.getDay()]+ " , " + now.getDate() + " de " + monName [now.getMonth()]    +  " de "   +   now.getFullYear() + " . ")
+</script>
+<div id="txt"></div>
+</th>
+<th width="1600px">
+<marquee behavior="alternate" direction="right"> "Estudando para ser um excelente profissional e atender bem os nossos pacientes!" </marquee>
+</th>
+</table>
+
+<br>
+
+<table border="0" width="100%">
+<tr>
+<th> <a href="conteudosite.html" target="site"> <button class="botao"> Página Inicial </button> </a> </th>
+<th> <a href="textos.html" target="site"> <button class="botao"> Textos </button> </a> </th>
+<th><a href="galeriadefotos.html" target="site" ><button class="botao"> Fotos </button> </a> </th>
+<th><a href="pagina3.html" target="site"><button class="botao"> Vídeos </button> </a> </th>
+<th><a href="videos.html" target="site"><button class="botao"> Podcast </button> </a> </th>
+</tr>
+</table>
+
+<br>
+
+</body>
+</html>

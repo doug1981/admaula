@@ -1,0 +1,86 @@
+<html>
+<head>
+
+<script type="text/javascript">
+function time()
+{
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+document.getElementById('txt').innerHTML=h+" : "+m+" : "+s;
+setTimeout('time()',500);
+}
+</script>
+
+
+
+<script language=javascript type="text/javascript">
+dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sabado")
+monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
+now = new Date
+</script>
+
+<style>
+h1
+{
+font-family: arial;
+color: blue;
+font-size: 35px;
+text-align: center;
+background-color: skyblue;
+text-shadow: 3px 3px 2px DeepSkyBlue;
+font-weight:bold;
+}
+
+h2
+{
+font-size: 30px
+text-align:left;
+}
+
+.figura
+{
+width: 300px;
+height: 200px;
+opacity: 0.8;
+border-radius: 20%;
+}
+
+
+</style>
+
+
+</head>
+<body onload="time()">
+
+<h1> Curso de Programador Web </h1>
+
+<hr size="1" color="gray" width="100%">
+<table border="0" width="100%">
+<tr>
+<th align="left" width="400px">
+<script>
+document.write("Hoje é " + dayName[now.getDay()]+ " , " + now.getDate() + " de " + monName [now.getMonth()]    +  " de "   +   now.getFullYear() + " . ")
+</script>
+<div id="txt"></div>
+</th>
+<th width="1600px">
+<marquee behavior="alternate" direction="right"> Texto rolando na tela </marquee>
+</th>
+</table>
+<hr size="1" color="gray" width="100%">
+
+<h2> Módulos do Curso: </h2>
+
+<img class="figura" src="imagens/imagem12.webp" align="right">
+
+<ol>
+<li> HTML </li>
+<li> CSS </li>
+<li> Java Script </li>
+<li> Montagem do Site </li>
+<li> Hospedagem do Site </li>
+
+</body>
+</html>
